@@ -17,8 +17,8 @@ class UserRegisterView(APIView):
     permission_classes = [AllowAny]
 
     @extend_schema(
-        request=RegisterSerializer,       # 👈 tells Swagger what to send
-        responses={201: UserSerializer},  # 👈 tells Swagger what it returns
+        request=RegisterSerializer,     
+        responses={201: UserSerializer},  
         description="Register a new user account",
     )
 
