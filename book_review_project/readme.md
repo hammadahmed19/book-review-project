@@ -117,17 +117,17 @@ POST /api/reviews/ → Add new review
 
 GET /api/reviews/book/<book_id>/ → Reviews for a given book
 
-📝 Example ORM Queries
+📝 ORM Queries
 Located in queries/review_queries.py
 
 1. Top 3 Books
 python
-Copy code
+
 from queries.review_queries import top_books
 print(top_books())
 2. Users with >5 Reviews
 python
-Copy code
+
 from queries.review_queries import active_users
 print(active_users())
 3. Most Active User
@@ -136,10 +136,11 @@ Copy code
 from queries.review_queries import most_active_user
 print(most_active_user())
 4. Reviews for Book
-python
-Copy code
+
+
 from queries.review_queries import reviews_for_book
 print(reviews_for_book(book_id=1))
+
 🗂️ Database Schema
 Entity Relationship Diagram (ERD)
 
@@ -150,3 +151,10 @@ Users → can post multiple reviews
 Books → can have multiple reviews
 
 Reviews → link Users ↔ Books with rating & comment
+
+🧑‍💻 Author
+
+Hammad Ahmed
+📧 ha92az@gmail.com
+
+📍 Islamabad, Pakistan
